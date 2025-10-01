@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FoodieHub — Checkout</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">🍔 <span>FoodieHub</span></div>
+      <nav class="nav" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Cart</a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="container checkout-section">
+      <h1>Checkout</h1>
+
+      <form id="checkout-form" onsubmit="placeOrder(event)">
+        <div class="form-row">
+          <label>Full name</label>
+          <input id="customer-name" required />
+        </div>
+        <div class="form-row">
+          <label>Phone</label>
+          <input id="customer-phone" required />
+        </div>
+        <div class="form-row">
+          <label>Address</label>
+          <textarea id="customer-address" required></textarea>
+        </div>
+        <div class="form-row">
+          <label>Payment method</label>
+          <select id="customer-payment" required>
+            <option value="cod">Cash on Delivery</option>
+            <option value="upi">UPI / Google Pay</option>
+            <option value="card">Card</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <button class="btn" type="submit">Place Order</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© 2025 FoodieHub</div>
+  </footer>
+</body>
+</html>

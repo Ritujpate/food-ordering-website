@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FoodieHub — Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="menu-advanced.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">🍔 <span>FoodieHub</span></div>
+      <nav class="nav" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Cart <span id="cart-count">0</span></a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>  <main>
+    <section class="menu-section container">
+      <h1>Our Menu</h1>
+      <div class="filters">
+        <button onclick="filterCategory('All')">All</button>
+        <button onclick="filterCategory('Burger')">Burger</button>
+        <button onclick="filterCategory('Pizza')">Pizza</button>
+        <button onclick="filterCategory('Pasta')">Pasta</button>
+        <button onclick="filterCategory('Wrap')">Wrap</button>
+        <button onclick="filterCategory('Dessert')">Dessert</button>
+        <input id="search" placeholder="Search dishes, e.g., pizza" oninput="renderMenu()">
+      </div><div id="menu-grid" class="menu-grid">
+    <!-- Menu items rendered by JS -->
+  </div>
+</section>
+
+  </main>  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 FoodieHub</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

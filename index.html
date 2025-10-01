@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FoodieHub — Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById('navbar');
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">🍔 <span>FoodieHub</span></div>
+      <nav class="nav" id="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="cart.html">Cart <span id="cart-count-small">(0)</span></a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Delicious food, delivered fast</h1>
+          <p>Explore our chef-curated menu and get your meal delivered hot & fresh.</p>
+          <div class="hero-ctas">
+            <a class="btn" href="menu.html">Order Now</a>
+            <a class="btn ghost" href="about.html">Learn More</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://i.pinimg.com/originals/d5/10/f7/d510f715edae6bf3a1e6e51db73f48e9.jpg" alt="Delicious food">
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+      <div class="container">
+        <h2>Popular Categories</h2>
+        <div class="cards">
+          <div class="card">
+            <img src="https://www.tasteofhome.com/wp-content/uploads/2021/01/New-York-Style-Pizza_EXPS_FT20_105578_F_1217_1.jpg" alt="pizza">
+            <div class="card-title">Pizza</div>
+          </div>
+          <div class="card">
+            <img src="https://img.freepik.com/premium-photo/juicy-burger-table-restaurant-fast-food_772412-4763.jpg" alt="burger">
+            <div class="card-title">Burgers</div>
+          </div>
+          <div class="card">
+            <img src="https://www.sabornamesa.com.br/media/k2/items/cache/5031e263a4a258791d6306b2d3d9dbf6_XL.jpg" alt="sushi">
+            <div class="card-title">Asian</div>
+          </div>
+          <div class="card">
+            <img src="https://tse3.mm.bing.net/th/id/OIP.a50XvRCcRpu_YyBMHeSAEgAAAA?rs=1&pid=ImgDetMain&o=7&rm=3" alt="dessert">
+            <div class="card-title">Desserts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="highlights">
+      <div class="container">
+        <h2>Why choose FoodieHub?</h2>
+        <div class="features">
+          <div class="feature">Fast Delivery</div>
+          <div class="feature">Quality Ingredients</div>
+          <div class="feature">Easy Payment</div>
+          <div class="feature">24/7 Support</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        🍔 <span>FoodieHub</span>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="#">Privacy</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © 2025 FoodieHub. All rights reserved.
+    </div>
+  </div>
+</footer>
+</body>
+</html>

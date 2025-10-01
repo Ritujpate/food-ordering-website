@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FoodieHub — Cart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">🍔 <span>FoodieHub</span></div>
+      <nav class="nav" id="navbar">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="cart.html" class="active">Cart <span id="cart-count-2">0</span></a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="cart-section container">
+      <h1>Your Cart</h1>
+      <div id="cart-empty" class="cart-empty">Your cart is empty. <a href="menu.html">Browse menu</a></div>
+      <div id="cart-list" class="cart-list">
+        <!-- items rendered by JS -->
+      </div>
+
+      <div class="cart-summary" id="cart-summary">
+        <div>
+          <div>Subtotal</div>
+          <div id="subtotal">₹0</div>
+        </div>
+        <div>
+          <div>Delivery</div>
+          <div id="delivery">₹30</div>
+        </div>
+        <div class="total-row">
+          <div>Total</div>
+          <div id="total">₹0</div>
+        </div>
+        <div class="cart-actions">
+          <button class="btn ghost" onclick="clearCart()">Clear Cart</button>
+          <button class="btn" onclick="goToCheckout()">Checkout</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© 2025 FoodieHub</div>
+    </div>
+  </footer>
+</body>
+</html>
